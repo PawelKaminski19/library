@@ -13,7 +13,7 @@ abstract class BaseRepository implements RepositoryInterface {
      */
     protected $model;
 
-    public function getAll($columns = array('*')) {
+    public function getAll($columns = ['*']) {
         return $this->model->get($columns);
     }
     public function create(array $data) {
@@ -25,7 +25,7 @@ abstract class BaseRepository implements RepositoryInterface {
     public function delete($id) {
         return $this->model->destroy($id);
     }
-     public function find($id, $columns = array('*')) {
+     public function find($id, $columns = ['*']) {
         return $this->model->find($id, $columns);
     }
 }
