@@ -17,16 +17,16 @@ class Book extends Model
 
   public function isbn()
   {
-        return $this->hasOne('App\Models\Isbn');
+        return $this->hasOne(\App\Models\Isbn::class);
   }
 
   public function loans()
   {
-        return $this->hasMany('App\Models\Loan');
+        return $this->hasMany(\App\Models\Loan::class);
   }
 
   public function authors()
   {
-        return $this->belongsToMany('App\Models\Author');
+        return $this->belongsToMany(\App\Models\Author::class);
   }
 }
