@@ -32,7 +32,7 @@ namespace App\Services;
       return $response;
     }
     public function search(string $bookTitle) {
-        return $this->sendGetRequest(array("q" => $bookTitle));
+        return $this->sendGetRequest(["q" => $bookTitle]);
     }
 
 }

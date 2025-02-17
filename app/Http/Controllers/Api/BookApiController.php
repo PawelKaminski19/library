@@ -46,7 +46,7 @@ class BookApiController extends Controller
     public function destroy(BookRepository $bookRepo, $id)
     {
       $booksList = $bookRepo->delete($id);
-      return array("message" => "success");
+      return ["message" => "success"];
     }
 
 }
